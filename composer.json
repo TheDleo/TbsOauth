@@ -1,0 +1,24 @@
+{
+    "name": "thebestsolution/tbs-zend-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roel Obdam"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.2.11",
+        "zendframework/zendframework1": "1.12.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TBS": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
