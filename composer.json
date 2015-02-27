@@ -1,9 +1,13 @@
 {
-    "name": "thebestsolution/tbs-zend-library",
+    "name": "TheDleo/TbsOauth",
     "license": "MIT",
     "authors": [
         {
             "name": "Roel Obdam"
+        },
+        {
+            "name": "Dan Martin",
+            "email": "dan@dleo.info"
         }
     ],
     "minimum-stability": "stable",
@@ -12,9 +16,9 @@
         "zendframework/zendframework1": "1.12.*"
     },
     "autoload": {
-        "psr-0": {
-            "TBS": "src/"
-        }
+        "classmap": [
+            "src/"
+        ]
     },
     "extra": {
         "branch-alias": {
