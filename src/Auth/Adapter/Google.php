@@ -36,9 +36,9 @@ class Google implements \Zend_Auth_Adapter_Interface
                                   $result['messages']);
    }
  
-   public static function getAuthorizationUrl()
+   public static function getAuthorizationUrl($config = 'Zend_Config')
    {
-      $config = Registry::get('config');
+      $config = Registry::get($config);
       $options = is_object($config) ? $config->toArray() : $config;
       return Consumer::getAuthorizationUrl($options['google']);
    }
@@ -55,7 +55,7 @@ class Google implements \Zend_Auth_Adapter_Interface
  
    protected function _setOptions($options = null)
    {
-      $config = Registry::get('config');
+      $config = Registry::get('Zend_Config');
       $options = is_object($config) ? $config->toArray() : $config;
       $this->_options = $options['google'];
    }
